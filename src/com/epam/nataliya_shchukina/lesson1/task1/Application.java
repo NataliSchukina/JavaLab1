@@ -14,12 +14,12 @@ package com.epam.nataliya_shchukina.lesson1.task1;
     public void runApplication() {       // работа приложения
 
         ArrayProcessing arrayProcessing = new ArrayProcessing();
-        var array = arrayInitionalization(20, -10, 10);  // Содаем массив
+        var array = arrayInitionalization(20, -10, 10);  // Создаем массив
         System.out.println("Original array:");
         arrayProcessing.arrayOutput(array);
         System.out.println();
 
-        var negativeIndex = arrayProcessing.getMaxNegativeIndex(array);  // Получаем макимальный отрицательный элемент
+        var negativeIndex = arrayProcessing.getMaxNegativeIndex(array);  // Получаем максимальный отрицательный элемент
         System.out.println("Maximum negative element of the array is: " +
                 array[negativeIndex] + " [" + negativeIndex + "]");
 
